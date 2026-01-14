@@ -11,6 +11,7 @@ on:
             - "**.md"
 
 permissions:
+    contents: read
     packages: write
 
 jobs:
@@ -34,7 +35,7 @@ jobs:
               id: meta
               uses: docker/metadata-action@v5
               with:
-                  images: ghcr.io/nghuy0901/ayayadashboard
+                  images: ghcr.io/${{ github.repository }}
                   tags: |
                       # For version tags (v1.2.3)
                       type=ref,event=tag
