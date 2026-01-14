@@ -34,7 +34,7 @@ jobs:
               id: meta
               uses: docker/metadata-action@v5
               with:
-                  images: ghcr.io/chocomeow/vocard-dashboard
+                  images: ghcr.io/nghuy0901/ayayadashboard
                   tags: |
                       # For version tags (v1.2.3)
                       type=ref,event=tag
